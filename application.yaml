@@ -1,6 +1,8 @@
 spring:
   application:
     name: auth-service
+  boot
+    message : Hello Shubham, What's up!
   config:
     import: optional:configserver:${CONFIG_SERVER_URI:http://localhost:8081}
   rabbitmq:

@@ -17,6 +17,8 @@ logging:
 
 
 spring:
+  boot
+    message : Hello Shubham, What's up!
   application:
     name: api-gateway
   cloud:

@@ -1,21 +1,7 @@
 server:
   port: 8081
 
-spring:
-  boot:
-    message: Hey Shubham!!
-  application:
-    name: config-server
-  profiles:
-    active: native
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/shubhask/Ecommerce-config-server.git
-          search-paths: config
-          username: ${GIT_USERNAME}
-          password: ${GIT_PASSWORD}
+spring:  
   rabbitmq:
     host: ${RABBITMQ_HOST:127.0.0.1}
     port: ${RABBITMQ_PORT:5672}

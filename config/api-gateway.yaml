@@ -13,7 +13,7 @@ logging:
 
 spring:
   boot:
-    message : What's up from centralized git repo!!
+    message : What's up from centralized config server git repo!!
   application:
     name: api-gateway
   cloud:

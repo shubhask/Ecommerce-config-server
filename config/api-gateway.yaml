@@ -64,7 +64,7 @@ spring:
               - RewritePath=/api/v1/carts/v3/api-docs, /v3/api-docs
             predicates:
               - Path=/api/v1/carts/**
-            uri: lb://cart-management-service
+            uri: lb://cart-service
         -   id: openapi
             filters:
               - RewritePath=/v3/api-docs/(?<segment>.*), /${segment}/v3/api-docs

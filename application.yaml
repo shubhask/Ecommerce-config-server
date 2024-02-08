@@ -1,17 +1,40 @@
+server:
+  port: 8081
+
 spring:
+  boot:
+    message: Hey Shubham!!
   application:
-    name: auth-service
-  boot
-    message : Hello Shubham, What's up!
-  config:
-    import: optional:configserver:${CONFIG_SERVER_URI:http://localhost:8081}
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/shubhask/Ecommerce-config-server.git
+          search-paths: config
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
   rabbitmq:
     host: ${RABBITMQ_HOST:127.0.0.1}
     port: ${RABBITMQ_PORT:5672}
     username: guest
     password: guest
-logging:
-  level:
-    org:
-      springframework: DEBUG
-    root: info
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka}
+    fetch-registry: true
+    register-with-eureka: true
+jwt:
+  secret:
+    key: bxcxvcvxNsapkdvopasjvdpsakvd7GNnbgdsfgV5Dfvdsavdasjzvcxvcx90kFDS
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+

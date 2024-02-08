@@ -18,7 +18,7 @@ logging:
 
 spring:
   boot:
-    message : Hello Shubham, What's up!
+    message : Hello Shubham, What's up from config server Backend!
   application:
     name: api-gateway
   cloud:

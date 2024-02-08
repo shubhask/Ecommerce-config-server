@@ -8,7 +8,7 @@ logging:
 
 spring:
   application:
-    name: cart-service
+    name: cart-management-service
   datasource:
     url: jdbc:mysql://${MYSQL_SERVER:localhost}:3306/ecommerce_cart
     username: root

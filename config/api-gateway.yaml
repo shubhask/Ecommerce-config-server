@@ -1,11 +1,6 @@
 server:
   port: 8080
 
-eureka:
-  client:
-    service-url:
-      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka}
-
 logging:
   level:
     org:
@@ -18,7 +13,7 @@ logging:
 
 spring:
   boot:
-    message : Hello Shubham, What's up from config server centralized git repo!!
+    message : Hello Api gateway from centralized config server git repo!!
   application:
     name: api-gateway
   cloud:
@@ -69,7 +64,7 @@ spring:
               - RewritePath=/api/v1/carts/v3/api-docs, /v3/api-docs
             predicates:
               - Path=/api/v1/carts/**
-            uri: lb://cart-management-service
+            uri: lb://cart-service
         -   id: openapi
             filters:
               - RewritePath=/v3/api-docs/(?<segment>.*), /${segment}/v3/api-docs

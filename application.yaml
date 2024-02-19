@@ -3,7 +3,7 @@ server:
 
 spring:
   boot:
-    message: Hey Shubham!!
+    message : Hello Config Server from centralized config server git repo!!
   rabbitmq:
     host: ${RABBITMQ_HOST:127.0.0.1}
     port: ${RABBITMQ_PORT:5672}

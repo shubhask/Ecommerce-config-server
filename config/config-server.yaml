@@ -1,0 +1,3 @@
+spring:
+  boot:
+    message: Hello Bro!!

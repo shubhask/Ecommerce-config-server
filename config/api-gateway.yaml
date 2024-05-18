@@ -13,7 +13,7 @@ logging:
 
 spring:
   boot:
-    message : Hello Api gateway from centralized config server git repo with Shubham!!
+    message : Hello Api gateway!!
   application:
     name: api-gateway
   cloud:

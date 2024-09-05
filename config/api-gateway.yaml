@@ -2,6 +2,8 @@ server:
   port: 8080
 
 logging:
+  file:
+    name: logs/api-gateway.log
   level:
     org:
       springframework:

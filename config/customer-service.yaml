@@ -2,7 +2,7 @@ server:
   port: 0
 logging:
   file:
-    name: customer.log
+    name: customer-service.log
   level:
     org:
       springframework: ERROR

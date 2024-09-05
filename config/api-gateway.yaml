@@ -13,7 +13,7 @@ logging:
 
 spring:
   boot:
-    message : Hello Api gateway!!
+    message : Hello Api gateway
   application:
     name: api-gateway
   cloud:

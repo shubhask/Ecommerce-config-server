@@ -4,6 +4,7 @@ logging:
   file:
     name: customer-service.log
   level:
+    root: INFO
     org:
       springframework: ERROR
 

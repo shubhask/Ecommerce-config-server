@@ -14,7 +14,7 @@ logging:
 
 spring:
   boot:
-    message : Hello Api gateway with rabbitmq!!
+    message : Hello Api gateway!!
   application:
     name: api-gateway
   cloud:

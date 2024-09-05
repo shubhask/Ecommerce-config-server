@@ -5,11 +5,6 @@ logging:
   file:
     name: logs/api-gateway.log
   level:
-    org:
-      springframework:
-        cloud:
-          gateway: TRACE
-          gateway.route.RouteDefinitionRouteLocator: INFO
     root: INFO
 
 

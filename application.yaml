@@ -30,5 +30,5 @@ logging:
   file:
     name: logs/${spring.application.name}.log
   level:
-    root: DEBUG
+    root: INFO
 

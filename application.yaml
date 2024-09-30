@@ -30,5 +30,8 @@ logging:
   file:
     name: logs/${spring.application.name}.log
   level:
+    org:
+      springframework: ERROR
     root: INFO
+    
 

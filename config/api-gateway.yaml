@@ -2,8 +2,6 @@ server:
   port: 8080
 
 spring:
-  boot:
-    message : Hello Api gateway
   application:
     name: api-gateway
   cloud:

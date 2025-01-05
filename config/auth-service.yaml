@@ -3,4 +3,4 @@ server:
 jwt:
   secret:
     key: bxcxvcvxNsapkdvopasjvdpsakvd7GNnbgdsfgV5Dfvdsavdasjzvcxvcx90kFDS
-  expiration: 3600000
+  expiration: 600000

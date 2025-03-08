@@ -14,11 +14,11 @@ spring:
               - SetPath=/
             predicates:
               - Path=/eureka/web
-            uri: ${EUREKA_SERVER:http://localhost:8761}
+            uri: ${EUREKA_SERVER:http://discovery-service:8761}
         -   id: discovery-server-static
             predicates:
               - Path=/eureka/**
-            uri: ${EUREKA_SERVER:http://localhost:8761}
+            uri: ${EUREKA_SERVER:http://discovery-service:8761}
         -   id: catalog-service
             filters:
               - RewritePath=/api/v1/catalog/v3/api-docs, /v3/api-docs, , /api/v1/swagger-ui/index.html
@@ -60,7 +60,7 @@ spring:
               - RewritePath=/v3/api-docs/(?<segment>.*), /${segment}/v3/api-docs
             predicates:
               - Path=/v3/api-docs/**
-            uri: ${API_GATEWAY_URI:http://localhost:8080}
+            uri: ${API_GATEWAY_URI:http://api-gateway:8080}
 springdoc:
   swagger-ui:
     urls:

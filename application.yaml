@@ -5,7 +5,7 @@ spring:
   boot:
     message : Hello Config Server from centralized config server git repo!!
   rabbitmq:
-    host: ${RABBITMQ_HOST:rabbitmq}
+    host: host.docker.internal
     port: ${RABBITMQ_PORT:5672}
     username: guest
     password: guest

@@ -3,7 +3,7 @@ server:
 
 spring:
   boot:
-    message : Hello Api gateway
+    message : Hello Api gateway from Git
   application:
     name: api-gateway
   cloud:

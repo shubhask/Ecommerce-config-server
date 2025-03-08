@@ -9,7 +9,6 @@ spring:
     port: ${RABBITMQ_PORT:5672}
     username: guest
     password: guest
-    virtual-host: /
 
 eureka:
   client:

@@ -11,6 +11,8 @@ spring:
     password: guest
 
 eureka:
+  instance:
+    hostName: ${spring.application.name}
   client:
     service-url:
       defaultZone: ${EUREKA_SERVER_URL:http://discovery-service:8761/eureka}

@@ -36,6 +36,10 @@ spring:
         -   id: catalog-service
             filters:
               - RewritePath=/api/v1/catalog/v3/api-docs, /v3/api-docs, , /api/v1/swagger-ui/index.html
+              - name: CircuitBreaker
+                args: 
+                  name: catalogCircuitBreaker
+                  fallbackUri: forward:/fallback/catalog
             predicates:
               - Path=/api/v1/catalog/**
             uri: lb://catalog-service
